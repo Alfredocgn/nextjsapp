@@ -84,3 +84,8 @@ a{
     width: 85%;
   }
 }
+@media (max-width:475px){
+  .container{
+    width: 85%;
+  }
+}

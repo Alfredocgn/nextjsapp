@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ContactPage = () => {
   return (
-    <div className="flex gap-24 items-center">
+    <div className="flex flex-col sm:flex-row gap-24 items-center">
       <div  className="flex-1 relative h-[500px]">
         <Image className="object-contain" src="/contact.png" alt="contact image" fill />
       </div>

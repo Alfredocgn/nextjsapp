@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
 import NavLink from "./navLink/navLink";
+import Image from "next/image";
 
 const links = [
   {title:"Homepage",path:"/"},
@@ -36,7 +37,8 @@ const isAdmin = true;
   
         }
       </div>
-      <button onClick={() => setOpen((prev) => !prev )} className="lg:hidden inline-block">Menu</button>
+      <button onClick={() => setOpen((prev) => !prev )} className="lg:hidden inline-block"><Image alt="menu button " width={30} height={30} src='/menu.png'/></button>
+      
       {
         open && 
         <div className="absolute lg:hidden top-28 right-0 w-[32%] h-[calc(100vh-100px)] bg-[#0d0c22] flex flex-col items-center justify-center gap-3">
